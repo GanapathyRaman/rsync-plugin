@@ -1,0 +1,20 @@
+{
+  "name": "rsync-plugin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rsync"
+  ],
+  "author": "Ganapathy Raman",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "Rsync plugin to transfer files between local machine and remote machine",
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "obsidian": "^1.7.2",
+    "typescript": "^5.7.3"
+  }
+}

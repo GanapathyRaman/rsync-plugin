@@ -1,0 +1,35 @@
+.sync-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+.rsync-progress {
+    flex-grow: 1;
+    margin-right: 10px;
+    position: relative;
+}
+
+.rsync-progress progress {
+    width: 100%;
+    height: 20px;
+}
+
+.rsync-progress span {
+    position: absolute;
+    right: 0;
+    top: -25px;
+    font-size: 12px;
+}  
+
+
+.settings-container {
+    margin-top: 10px; /* Space above the settings container */
+    padding: 10px; /* Optional padding for better aesthetics */
+    border: 1px solid #ccc; /* Optional border for visibility */
+}
+
+.settings-toggle {
+    margin-bottom: 10px; /* Space below the toggle button */
+}

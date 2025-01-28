@@ -1,0 +1,19 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+/dist
+/build
+
+# Environment variables
+.env
+
+# Log files
+*.log
+
+# Operating system files (e.g., macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# TypeScript build
+*.tsbuildinfo

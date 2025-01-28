@@ -1,0 +1,9 @@
+{
+  "id": "rsync-plugin",
+  "name": "Rsync Plugin",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "A plugin to sync files using Rsync.",
+  "author": "Ganapathy Raman",
+  "isDesktopOnly": false
+}

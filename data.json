@@ -1,0 +1,16 @@
+{
+  "rsyncBinaryPath": "wsl /usr/bin/rsync",
+  "remoteIP": "192.168.0.104",
+  "sshPort": 8022,
+  "sshUsername": "u0_a318",
+  "sshPassword": "",
+  "privateKeyPath": "/home/eganama/.ssh/id_rsa",
+  "localDirPath": "\"/mnt/c/Users/eganama/OneDrive - Ericsson/Documents/Ganapathy-Vault\"",
+  "remoteDirPath": "/data/data/com.termux/files/home/storage/documents/",
+  "syncDirection": "push",
+  "dryRun": false,
+  "logFilePath": "/mnt/c/Users/eganama/OneDrive - Ericsson/SSH_Keys/test.txt",
+  "excludePatterns": [],
+  "scheduleInterval": 0,
+  "publicKeyPath": ""
+}
