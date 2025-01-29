@@ -1,10 +1,10 @@
 {
   "id": "rsync-plugin",
   "name": "Rsync",
-  "version": "1.0.0",
+  "version": "v1.0.0",
   "minAppVersion": "1.0.0",
   "description": "A plugin to sync files using Rsync.",
   "author": "Ganapathy Raman",
-  "authorUrl": "https://github.com/GanapathyRaman/rsync-plugin",
+  "authorUrl": "https://github.com/GanapathyRaman",
   "isDesktopOnly": false
 }
