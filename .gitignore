@@ -17,3 +17,6 @@ Thumbs.db
 
 # TypeScript build
 *.tsbuildinfo
+
+# Data file
+data,json
