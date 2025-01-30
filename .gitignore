@@ -20,3 +20,6 @@ Thumbs.db
 
 # Data file
 data,json
+
+# Compiled main.js
+main.js

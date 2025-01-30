@@ -3,8 +3,8 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-  }
-  
+}
+
 .rsync-progress {
     flex-grow: 1;
     margin-right: 10px;
@@ -21,13 +21,17 @@
     right: 0;
     top: -25px;
     font-size: 12px;
-}  
-
+}
 
 .settings-container {
     margin-top: 10px; /* Space above the settings container */
     padding: 10px; /* Optional padding for better aesthetics */
     border: 1px solid #ccc; /* Optional border for visibility */
+    display: none; /* Initially hidden */
+}
+
+.settings-container.visible {
+    display: block; /* Show settings when the "visible" class is added */
 }
 
 .settings-toggle {

@@ -156,8 +156,6 @@ class RsyncModal extends Modal {
     const { contentEl } = this;
     contentEl.empty();
 
-    const syncDirOptions = ['push', 'pull'];
-
     // Add form for heading
     contentEl.createEl('h2', { text: 'Rsync Plugin' });
 
@@ -211,27 +209,28 @@ class RsyncModal extends Modal {
         })
       );
 
-    // Add a toggle button for collapsing/expanding the settings
-    const toggleButton = contentEl.createEl('button', { cls: 'settings-toggle' });
-    toggleButton.setText('► Show Settings'); // Change to right triangle
-    let settingsVisible = false;
+      // Create the toggle button
+      const toggleButton = contentEl.createEl('button', { cls: 'settings-toggle' });
+      toggleButton.setText(String.fromCharCode(0x25B6) + ' Show Settings'); // Initial text
 
-    // Create a container for settings
-    const settingsContainer = contentEl.createEl('div', { cls: 'settings-container' });
-    settingsContainer.style.display = 'none'; // Initially hidden
+      // Initialize settings visibility
+      let settingsVisible = false;
 
-    
-    // Toggle the visibility of the settings when the button is clicked
-    toggleButton.onclick = () => {
-      settingsVisible = !settingsVisible;
-      if (settingsVisible) {
-        settingsContainer.style.display = 'block'; // Show settings
-        toggleButton.setText(String.fromCharCode(0x25BC) + ' Hide Settings'); // ▼ (UTF-8 number U+25BC)
-      } else {
-        settingsContainer.style.display = 'none'; // Hide settings
-        toggleButton.setText(String.fromCharCode(0x25B6) + ' Show Settings'); // ► (UTF-8 number U+25B6)
-      }
-    };
+      // Create the settings container
+      const settingsContainer = contentEl.createEl('div', { cls: 'settings-container' });
+      settingsContainer.classList.remove('visible'); // Ensure it's hidden initially
+
+      // Toggle button click handler
+      toggleButton.onclick = () => {
+          settingsVisible = !settingsVisible;
+          if (settingsVisible) {
+              settingsContainer.classList.add('visible');
+              toggleButton.setText(String.fromCharCode(0x25BC) + ' Hide Settings');
+          } else {
+              settingsContainer.classList.remove('visible');
+              toggleButton.setText(String.fromCharCode(0x25B6) + ' Show Settings');
+          }
+      };
 
     // Add space here if needed (for visual separation)
     contentEl.createEl('div', { cls: 'spacer' }); // Optional spacer element
@@ -361,6 +360,7 @@ class RsyncModal extends Modal {
       .setName('Exclude Patterns')
       .setDesc('Patterns to be excluded from sync')
       .addTextArea(textArea => textArea
+        .setPlaceholder('Example: *.log, temp/*, *backup*')
         .setValue(this.plugin.settings.excludePatterns.join('\n'))
         .onChange(async (value) => {
           this.plugin.settings.excludePatterns = value.split('\n');
@@ -553,4 +553,3 @@ class RsyncPluginSettingTab extends PluginSettingTab {
       );
   }
 }
-
