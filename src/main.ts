@@ -166,7 +166,7 @@ class RsyncModal extends Modal {
         contentEl.createEl('h2', { text: 'Rsync' });
 
         // Container for progress bar and button
-        const syncContainer = contentEl.createEl('div', { cls: 'sync-container' });
+        const syncContainer = contentEl.createEl('div', { cls: 'rsync-container' });
 
         // Progress bar on the top left
         this.progressBar = syncContainer.createEl('div', { cls: 'rsync-progress' });
@@ -189,7 +189,7 @@ class RsyncModal extends Modal {
             );
 
         // Sync button on the top right
-        const syncButtonContainer = syncContainer.createEl('div', { cls: 'sync-button-container' });
+        const syncButtonContainer = syncContainer.createEl('div', { cls: 'rsync-button-container' });
         new Setting(syncButtonContainer)
             .setName('')
             .setDesc('')
@@ -214,14 +214,14 @@ class RsyncModal extends Modal {
             );
 
         // Create the toggle button
-        const toggleButton = contentEl.createEl('button', { cls: 'settings-toggle' });
+        const toggleButton = contentEl.createEl('button', { cls: 'rsync-settings-toggle' });
         toggleButton.setText(String.fromCharCode(0x25B6) + ' Show settings'); // Initial text
 
         // Initialize settings visibility
         let settingsVisible = false;
 
         // Create the settings container
-        const settingsContainer = contentEl.createEl('div', { cls: 'settings-container' });
+        const settingsContainer = contentEl.createEl('div', { cls: 'rsync-settings-container' });
         settingsContainer.classList.remove('visible'); // Ensure it's hidden initially
 
         // Toggle button click handler
