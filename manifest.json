@@ -3,8 +3,7 @@
   "name": "Rsync",
   "version": "1.0.0",
   "minAppVersion": "1.0.0",
-  "description": "A plugin to sync files using Rsync.",
+  "description": "Sync files across devices using rsync tool.",
   "author": "Ganapathy Raman",
-  "authorUrl": "https://github.com/GanapathyRaman",
-  "isDesktopOnly": false
+  "isDesktopOnly": true
 }

@@ -1,9 +1,8 @@
-# Rsync Plugin for Obsidian
+# Rsync Plugin
 
-The Rsync Plugin for Obsidian allows you to sync directories between your local machine and a remote server using `rsync`. This plugin provides a user-friendly interface for managing `rsync` operations directly within Obsidian, allowing you to automate syncing, perform manual syncs with a progress bar, and configure various `rsync` options like exclusions and logging.
+Sync your files and folders across devices using `rsync` tool. Supports automated and scheduled syncing betwen the devices.
 
-![Rsync Plugin Screenshot 1](./images/rsync1.PNG)  
-![Rsync Plugin Screenshot 2](./images/rsync2.PNG)  
+![Rsync Plugin Screenshot](./assets/rsync.PNG)  
 
 ## Features
 

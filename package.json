@@ -6,12 +6,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
+    "obsidian-plugin",
     "rsync"
   ],
   "author": "Ganapathy Raman",
-  "license": "ISC",
+  "license": "MIT",
   "type": "commonjs",
-  "description": "Rsync plugin to transfer files between local machine and remote machine",
+  "description": "Sync your files and folders across devices.",
   "devDependencies": {
     "@types/node": "^22.10.7",
     "obsidian": "^1.7.2",
